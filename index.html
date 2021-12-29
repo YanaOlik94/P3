@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="uiRouter">
+  <head>
+    <meta charset="utf-8">
+    <title>P3</title>
+    <script src="https://code.angularjs.org/snapshot/angular.min.js"></script>
+    <script src="//unpkg.com/@uirouter/angularjs@1.0.7/release/angular-ui-router.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+        
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+        <a class="navbar-brand" ui-sref="home" ui-sref-active="active">Home</a>
+        <a class="navbar-brand" ui-sref="sign in" ui-sref-active="active">Sign in</a>
+        </div>
+      </nav>
+      
+  <ui-view></ui-view>
+
+  </body>
+</html>
